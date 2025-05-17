@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join Climate Action</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><span class="logo"></span> Join the Climate Action Campaign</h1>
+    <nav>
+      <a href="INDDEX.html">Home</a>
+      <a href="ABOUTT.html">About</a>
+      <a href="CONTACTT.html">Contact</a>
+      <a href="QUIZZ.html">Quiz</a>
+      <a href="SIGNUPP.html">Join Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="signup-form">
+      <p>Be part of the change for a better planet.</p>
+      <label>First Name * <input type="text" id="firstName" required></label><span class="error" id="err-first"></span><br>
+      <label>Last Name * <input type="text" id="lastName" required></label><span class="error" id="err-last"></span><br>
+      <label>Sex *<br>
+        <input type="radio" name="sex" value="Male"> Male
+        <input type="radio" name="sex" value="Female"> Female
+        <input type="radio" name="sex" value="Prefer not to say"> Prefer not to say
+      </label><span class="error" id="err-sex"></span><br>
+      <label>Email * <input type="email" id="email" required></label><span class="error" id="err-email"></span><br>
+      <label>Password * <input type="password" id="password" required></label><span class="error" id="err-pass"></span><br>
+      <label>Contact Number <input type="text" id="contact"></label><br>
+      <label>Why are you supporting our campaign? *<br>
+        <textarea id="reason" required></textarea>
+      </label><span class="error" id="err-reason"></span><br>
+      <button type="submit">Sign Up Now</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><span class="logo"></span> Your Profile</h1>
+  </header>
+
+  <main>
+    <h2>Welcome to the Climate Action Movement!</h2>
+    <p><strong>First Name:</strong> <span id="p-firstName"></span></p>
+    <p><strong>Last Name:</strong> <span id="p-lastName"></span></p>
+    <p><strong>Email:</strong> <span id="p-email"></span></p>
+    <p><strong>Sex:</strong> <span id="p-sex"></span></p>
+    <p><strong>Why You Support This:</strong> <span id="p-reason"></span></p>
+  </main>
+
+  <script>
+    document.getElementById("p-firstName").textContent = localStorage.getItem("firstName");
+    document.getElementById("p-lastName").textContent = localStorage.getItem("lastName");
+    document.getElementById("p-email").textContent = localStorage.getItem("email");
+    document.getElementById("p-sex").textContent = localStorage.getItem("sex");
+    document.getElementById("p-reason").textContent = localStorage.getItem("reason");
+  </script>
+</body>
+</html>
